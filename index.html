@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aces & Deuces Rentals | Porta Potties & Party Supplies</title>
+  <meta name="description" content="Aces & Deuces provides reliable porta potty rentals and quality party supplies for events, construction sites, weddings, and more.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1 class="main-title">
+      <img src="/images/main logo.jpg" alt="Aces & Deuces Logo" class="logo">
+      <span>Aces & Deuces Rentals</span>
+      <img src="/images/main logo.jpg" alt="Aces & Deuces Logo" class="logo">
+    </h1>
+  </header>
+
+  <section class="hero">
+    <h2>Reliable Porta Potty & Party Supply Rentals</h2>
+    <p>Serving your sanitation and celebration needs with style, speed, and professionalism.</p>
+    <a href="#contact" class="cta-button">Get a Quote</a>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>Porta Potty Rentals</h3>
+      <p>Clean, fast delivery, and perfect for job sites, events, and festivals.</p>
+    </div>
+    <div class="service-card">
+      <h3>Party Supplies</h3>
+      <p>Tents, tables, chairs, and more — everything you need to celebrate.</p>
+    </div>
+    <div class="service-card">
+      <h3>Event Packages</h3>
+      <p>Bundle deals for weddings, reunions, and corporate events. One call does it all.</p>
+    </div>
+  </section>
+
+  <section class="picture-section">
+    <div class="scroll-wrapper">
+      <div class="picture-card">
+        <img src="/images/portas.jpg" alt="Porta Potty Rental" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/brand new portas.jpg" alt="Porta Potty Rental" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/cleaning stations.jpg" alt="Cleaning Station" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/New Tables.jpg" alt="Porta Potty Rental" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/porta anywhere.jpg" alt="Porta Potty Rental" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/porta on the lake.jpg" alt="Cleaning Station" class="service-image">
+      </div>
+      <div class="picture-card">
+        <img src="/images/clean porta.jpg" alt="Cleaning Station" class="service-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-card active">
+        <p>"Aces & Deuces made our wedding stress-free with their reliable service and clean rentals!"</p>
+        <p class="customer-name">- Sarah J.</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"We were so glad we gave this rental service a try! Chris and his team delivered the unit on time, clean and perfectly leveled for our guests. They returned exactly when they said they would to haul it away. 
+You have our business for all future potty rentals!"</p>
+        <p class="customer-name">- Diana O.</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"I couldn't be happier with the service Aces & Deuces Porta Potty Rental provided. The company replied quickly and followed through with a clean, and I mean CLEAN unit! The price was just right and the delivery and pick up was no stress at all. 
+Highly recommend this company and will be using them again for future events."</p>
+        <p class="customer-name">- Cayla T.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <p>&copy; 2025 Aces & Deuces Rentals | Call us at (315) 730-7532 | <a href="mailto:info@acesdeuces.com">info@acesdeuces.com</a></p>
+  </footer>
+
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial-card');
+    let index = 0;
+
+    function showNextTestimonial() {
+      testimonials[index].classList.remove('active');
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add('active');
+    }
+
+    setInterval(showNextTestimonial, 5000);
+  </script>
+
+</body>
+</html>
